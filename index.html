@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sps.css">
+</head>
+<body>
+    <h1>Stone, Paper, Scissors</h1>
+    <div class="container">
+        <div class="left">
+            <div class="choices">
+                <div class="choice "  id="stone"><img src="images/stone.jpg"> </div>
+                <div class="choice"  id="paper"><img src="images/paper.jpg"> </div>
+                <div class="choice"  id="scissor"><img src="images/scissor.jpg"> </div>
+            </div>
+
+            <div class="compchoices">
+                <div class="choice hide"  id="Cstone"><img src="images/stone.jpg"> </div>
+                <div class="choice hide"  id="Cpaper"><img src="images/paper.jpg"> </div>
+                <div class="choice hide"  id="Cscissor"><img src="images/scissor.jpg"> </div>
+            </div>
+        </div>  
+        
+        <div class="right">
+            <h2 >Score board</h2>
+            <div class="scoreBoard">
+                <div class="score">
+                    <div id="userScore"><p>0</p></div>
+                    <div >User</div>
+                </div>
+
+                <div class="score">
+                    <div id="compScore"><p>0</p></div>
+                    <div>computer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="messageContainer">
+            <p id="msg">click ur choice</p>
+        </div>
+    
+</body>
+<script src="sps.js"></script>
+</html>

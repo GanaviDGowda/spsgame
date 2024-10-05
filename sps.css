@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    background-color: #E85C0D ;
+    color: #fff;
+    font-size:3rem;
+    text-align: center;
+    padding: 1rem;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.left, .right{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.choices{
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    display: flex;
+    flex-wrap: row;
+    margin: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.choice{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:1rem;
+}
+ 
+.choice :hover{
+    box-shadow: 0 4px 10px rgb(130, 17, 49,0.7);
+    cursor: pointer;
+}
+.compchoices{
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    display: flex;
+    margin: 2rem;
+    pointer-events: none;
+}
+
+.hide{
+    display: none;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.scoreBoard{
+    display: flex;
+    flex-direction:row;
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem;
+    color: #C7253E;
+    
+}
+#userScore, #compScore{
+    font-size: 3rem;
+    color: #E85C0D;
+   
+}
+.messageContainer{
+    text-align: center;
+    width: 100vh;
+}
+
+
+#msg{
+    background-color: #C7253E ;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: inline;
+    border-radius: 10px;
+    
+}
+h2{
+    font-size: 4rem;
+    color: #6C0345;
+    text-align: center;
+    margin-top: 10rem;
+
+}
